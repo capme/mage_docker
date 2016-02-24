@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name  micro-bridge-elevenia;
+
+    index index.php;
+    
+    root /var/www/acommerce/micro-bridge/elevenia/public;
+
+    include /etc/nginx/conf.d/php-fpm;
+}
